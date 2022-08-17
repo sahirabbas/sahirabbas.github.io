@@ -1,200 +1,186 @@
-<div align="center">
-  <br>
-
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
-
-  <h1>JEKYLL YAT THEME</h1>
-
-</div>
-
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
-
 <p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
-
-  <a href="https://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
-
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="https://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
-
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
-
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
+  <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
+    <img alt="Example article page" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
   </a>
 </p>
 
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
+# Next.js Notion Starter Kit
 
-<br>
+> The perfect starter kit for building websites with Next.js and Notion.
 
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
+[![Build Status](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml/badge.svg)](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
+## Intro
 
-<p align="center">
+This repo is what I use to power my personal blog and portfolio site [transitivebullsh.it](https://transitivebullsh.it).
 
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
+It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com).
 
 ## Features
 
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
+- Setup only takes a few minutes ([single config file](./site.config.ts)) 💪
+- Robust support for Notion content via [react-notion-x](https://github.com/NotionX/react-notion-x)
+- Built using Next.js, TS, and React
+- Excellent page speeds
+- Smooth image previews
+- Automatic social images
+- Automatic pretty URLs
+- Automatic table of contents
+- Full support for dark mode
+- Quick search via CMD+K / CMD+P
+- Responsive for different devices
+- Optimized for Next.js and Vercel
 
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
+## Demos
 
-## Installation
+- [Default demo](https://nextjs-notion-starter-kit.transitivebullsh.it) - Deployed from the `main` branch
+- [My site](https://transitivebullsh.it) - Deployed from the `transitive-bullshit` branch
 
-There are three ways to install:
+## Setup
 
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
+**All config is defined in [site.config.ts](./site.config.ts).**
 
-### Gem-based Theme Method
+This project requires a recent version of Node.js (>= 14.17).
 
-Add this line to your Jekyll site's `Gemfile`:
+1. Fork / clone this repo
+2. Change a few values in [site.config.ts](./site.config.ts)
+3. `npm install`
+4. `npm run dev` to test locally
+5. `npm run deploy` to deploy to vercel 💪
 
-```ruby
-gem "jekyll-theme-yat"
-```
+I tried to make configuration as easy as possible — All you really need to do to get started is edit `rootNotionPageId`.
 
-And add this line to your Jekyll site's `_config.yml`:
+We recommend duplicating the [default page](https://notion.so/7875426197cf461698809def95960ebf) as a starting point, but you can use any public notion page you want.
 
-```yaml
-theme: jekyll-theme-yat
-```
+Make sure your root Notion page is **public** and then copy the link to your clipboard. Extract the last part of the URL that looks like `7875426197cf461698809def95960ebf`, which is your page's Notion ID.
 
-And then execute:
+In order to find your Notion workspace ID (optional), just load any of your site's pages into your browser and open up the developer console. There will be a global variable that you can access called `block` which is the Notion data for the current page. If you enter `block.space_id`, it will print out your page's workspace ID.
+
+I recommend setting up a collection on your home page that contains all of your articles / projects / content. There are no structural constraints on your Notion workspace, however, so feel free to add content as you normally would in Notion.
+
+## URL Paths
+
+The app defaults to slightly different URL paths in dev vs prod (though pasting any dev pathname into prod will work and vice-versa).
+
+In development, it will use `/nextjs-notion-blog-d1b5dcf8b9ff425b8aef5ce6f0730202` which is a slugified version of the page's title suffixed with its Notion ID. I've found that it's really useful to always have the Notion Page ID front and center during local development.
+
+In production, it will use `/nextjs-notion-blog` which is a bit nicer as it gets rid of the extra ID clutter.
+
+The mapping of Notion ID to slugified page titles is done automatically as part of the build process. Just keep in mind that if you plan on changing page titles over time, you probably want to make sure old links will still work, and we don't currently provide a solution for detecting old links aside from Next.js's built-in [support for redirects](https://nextjs.org/docs/api-reference/next.config.js/redirects).
+
+See [mapPageUrl](./lib/map-page-url.ts) and [getCanonicalPageId](https://github.com/NotionX/react-notion-x/blob/master/packages/notion-utils/src/get-canonical-page-id.ts) for more details.
+
+You can override the default slug generation on a per-page basis by adding a `Slug` text property to your database. Any page which has a `Slug` property will use that as its slug.
+
+NOTE: if you have multiple pages in your workspace with the same slugified name, the app will throw an error letting you know that there are duplicate URL pathnames.
+
+## Preview Images
+
+<p align="center">
+  <img alt="Example preview image" src="https://user-images.githubusercontent.com/552829/160142320-35343317-aa9e-4710-bcf7-67e5cdec586d.gif" width="458">
+</p>
+
+We use [next/image](https://nextjs.org/docs/api-reference/next/image) to serve images efficiently, with preview images optionally generated via [lqip-modern](https://github.com/transitive-bullshit/lqip-modern). This gives us extremely optimized image support for sexy smooth images.
+
+Preview images are **enabled by default**, but they can be slow to generate, so if you want to disable them, set `isPreviewImageSupportEnabled` to `false` in `site.config.ts`.
+
+### Redis
+
+If you want to cache generated preview images to speed up subsequent builds, you'll need to first set up an external [Redis](https://redis.io) data store. To enable redis caching, set `isRedisEnabled` to `true` in `site.config.ts` and then set `REDIS_HOST` and `REDIS_PASSWORD` environment variables to point to your redis instance.
+
+You can do this locally by adding a `.env` file:
 
 ```bash
-$ bundle
+REDIS_HOST='TODO'
+REDIS_PASSWORD='TODO'
 ```
 
-Or install it yourself as:
+If you're not sure which Redis provider to use, we recommend [Redis Labs](https://redis.com), which provides a free plan.
 
-```bash
-$ gem install jekyll-theme-yat
+Note that preview images and redis caching are both optional features. If you’d rather not deal with them, just disable them in your site config.
+
+## Styles
+
+All CSS styles that customize Notion content are located in [styles/notion.css](./styles/notion.css). They mainly target global CSS classes exported by react-notion-x [styles.css](https://github.com/NotionX/react-notion-x/blob/master/packages/react-notion-x/src/styles.css).
+
+Every notion block gets its own unique classname, so you can target individual blocks like this:
+
+```css
+.notion-block-260baa77f1e1428b97fb14ac99c7c385 {
+  display: none;
+}
 ```
 
-### Remote Theme Method with GitHub Pages
+## Dark Mode
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+<p align="center">
+  <img alt="Light Mode" src="https://transitive-bs.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83ea9f0f-4761-4c0b-b53e-1913627975fc%2Ftransitivebullsh.it_-opt.jpg?table=block&id=ed7e8f60-c6d1-449e-840b-5c7762505c44&spaceId=fde5ac74-eea3-4527-8f00-4482710e1af3&width=2000&userId=&cache=v2" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark Mode" src="https://transitive-bs.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc0839d6c-7141-48df-8afd-69b27fed84aa%2Ftransitivebullsh.it__(1)-opt.jpg?table=block&id=23b11fe5-d6df-422d-9674-39cf7f547523&spaceId=fde5ac74-eea3-4527-8f00-4482710e1af3&width=2000&userId=&cache=v2" width="45%">
+</p>
 
-To install:
+Dark mode is fully supported and can be toggled via the sun / moon icon in the footer.
 
-Add this line to your Jekyll site's `Gemfile`:
+## Automatic Social Images
 
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
+<p align="center">
+  <img alt="Example social image" src="https://user-images.githubusercontent.com/552829/162001133-34d4cf24-123a-4569-a540-f683b22830d1.jpeg" width="600">
+</p>
 
-And add this line to your Jekyll site's `_config.yml`:
+All Open Graph and social meta tags are generated from your Notion content, which makes social sharing look professional by default.
 
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
+Social images are generated automatically using headless chrome. You can tweak the default React template for social images by editing [api/social-images.tsx](./pages/api/social-image.tsx).
 
-And then execute:
+You can view an example social image live in production [here](https://transitivebullsh.it/api/social-image?id=dfc7f709-ae3e-42c6-9292-f6543d5586f0).
 
-```bash
-$ bundle
-```
+## Automatic Table of Contents
 
-### GitHub Pages without limitation
+<p align="center">
+  <img alt="Smooth ToC Scrollspy" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcb2df62d-9028-440b-964b-117711450921%2Ftoc2.gif?table=block&id=d7e9951b-289c-4ff2-8b82-b0a61fe260b1&cache=v2" width="240">
+</p>
 
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
+By default, every article page will have a table of contents displayed as an `aside` on desktop. It uses **scrollspy** logic to automatically update the current section as the user scrolls through your document, and makes it really easy to jump between different sections.
 
-To use the third-party gem in GitHub Pages without limitation:
+If a page has less than `minTableOfContentsItems` (default 3), the table of contents will be hidden. It is also hidden on the index page and if the browser window is too small.
 
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
+This table of contents uses the same logic that Notion uses for its built-in Table of Contents block (see [getPageTableOfContents](https://github.com/NotionX/react-notion-x/blob/master/packages/notion-utils/src/get-page-table-of-contents.ts) for the underlying logic).
 
-## Usage
+## Responsive
 
-Add or update your available layouts, includes, sass and/or assets.
+<p align="center">
+  <img alt="Mobile article page" src="https://user-images.githubusercontent.com/552829/160132983-c2dd5830-80b3-4a0e-a8f1-abab5dbeed11.jpg" width="300">
+</p>
 
-## Development
+All pages are designed to be responsive across common device sizes.
 
-To set up your environment to develop this theme, run `bundle install`.
+## Analytics
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Analytics are an optional feature that are easy to enable if you want.
 
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
+### Fathom Analytics
+
+[Fathom](https://usefathom.com/ref/42TFOZ) provides a lightweight alternative to Google Analytics.
+
+To enable, just add a `NEXT_PUBLIC_FATHOM_ID` environment variable, which will only be used in production.
+
+### PostHog Analytics
+
+[PostHog](https://posthog.com/) provides a lightweight, **open source** alternative to Google Analytics.
+
+To enable, just add a `NEXT_PUBLIC_POSTHOG_ID` environment variable, which will only be used in production.
+
+## Environment Variables
+
+If you're using Redis, analytics, or any other feature which requires environment variables, then you'll need to [add them to your Vercel project](https://vercel.com/docs/concepts/projects/environment-variables).
+
+If you want to test your redis builds with GitHub Actions, then you'll need to edit the [default build action](./.github/workflows/build.yml) to add `REDIS_HOST` and `REDIS_PASSWORD`. Here is an [example from my personal branch](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/blob/transitive-bullshit/.github/workflows/build.yml#L17-L21). You'll also need to add these environment variables to your GitHub repo as [repository secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
 
 ## Contributing
 
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+See the [contribution guide](contributing.md) and join our amazing list of [contributors](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/graphs/contributors)!
 
 ## License
 
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
+MIT © [Travis Fischer](https://transitivebullsh.it)
 
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+Support my open source work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
