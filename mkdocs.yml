@@ -1,0 +1,9 @@
+theme:
+  name: material
+  features:
+  - content.code.copy
+site_name: OpsGuides
+nav:
+- Home: index.md
+- Elegant Evicted Pod Cleanup - Kubernetes Workaround: evicted_pod_cleanup.md
+
